@@ -1,4 +1,4 @@
 text-recordparser
 =================
 
-Perl CPAN module "Text::RecordParser"
+Perl CPAN module "Text::RecordParser."
