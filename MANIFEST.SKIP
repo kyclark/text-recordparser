@@ -30,3 +30,6 @@
 tar.gz$
 \bcover_db
 ^MYMETA.yml$
+^MYMETA\.json$
+
+\.git
