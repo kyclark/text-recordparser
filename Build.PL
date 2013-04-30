@@ -4,7 +4,7 @@ use Module::Build;
 
 my $class = Module::Build->subclass(
     class => 'TRP::Builder',
-    code => q*
+    code  => q*
         sub ACTION_docs {
             use Pod::Readme;
             use Pod::Select;
