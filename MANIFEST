@@ -47,3 +47,5 @@ t/data/trim.csv
 t/pod-coverage.t
 t/pod.t
 TODO
+META.yml
+META.json
