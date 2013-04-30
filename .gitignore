@@ -16,4 +16,5 @@ nytprof.out
 pm_to_blib
 *.swp
 *.tar.gz
-META.json
+META.*
+MYMETA.*
