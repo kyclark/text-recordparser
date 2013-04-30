@@ -6,9 +6,9 @@ my $class = Module::Build->subclass(
     class => 'TRP::Builder',
     code  => q*
         sub ACTION_docs {
-            use Pod::Readme;
-            use Pod::Select;
-            use Pod::Markdown;
+            require 'Pod/Readme.pm';
+            require 'Pod/Select.pm';
+            require 'Pod/Markdown.pm';
 
             my $self = shift;
             my $pod  = 'README.pod';
@@ -44,8 +44,9 @@ my $build = $class->new(
     script_files       => ['bin/tablify', 'bin/tabmerge', 'bin/tab2graph'],
 
     configure_requires         => {
+        'Module::Build'        => 0.40,
         'Pod::Markdown'        => 0,
-        'Pod::Select'          => 0,
+        'Pod::Readme'          => 0,
         'Pod::Select'          => 0,
     },
 
