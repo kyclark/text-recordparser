@@ -13,7 +13,7 @@ my $class = Module::Build->subclass(
             my $self = shift;
             my $pod  = 'README.pod';
 
-            podselect({ -output => $pod }, 'lib/Text/RecordParser.pm');
+            Pod::Select::podselect({ -output => $pod }, 'lib/Text/RecordParser.pm');
 
             my $parser = Pod::Readme->new();
 
