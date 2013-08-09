@@ -56,12 +56,16 @@ my $build = $class->new(
         'Readonly'             => 0,
         'List::Util'           => 0,
         'List::MoreUtils'      => 0,
+        'Text::Autoformat'     => 0,
         'version'              => 0,
     },
 
     build_requires             => {
         'Test::More'           => 0,
         'Test::Exception'      => 0,
+        'Pod::Readme'          => 0,
+        'Pod::Select'          => 0,
+        'Pod::Markdown'        => 0,
     },
 
     recommends                 => {

@@ -416,6 +416,10 @@ fields.  Use a "false" argument to disable.
 
 Ken Youens-Clark <kclark@cpan.org>
 
+# SOURCE
+
+http://github.com/kyclark/text-recordparser
+
 # CREDITS
 
 Thanks to the following:
