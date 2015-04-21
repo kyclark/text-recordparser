@@ -8,9 +8,9 @@ use Test::More;
 use File::Spec::Functions;
 
 Readonly my $TEST_COUNT    => 13;
-Readonly my $PERL          => $Config{'perlpath'};
+Readonly my $PERL          => $^X;
 Readonly my $TEST_DATA_DIR => catdir( $Bin, 'data' );
-Readonly my $TABLIFY       => catfile( $Bin, '..', 'bin', 'tablify' );
+Readonly my $TABLIFY       => catfile($Bin, '..', qw/bin tablify/);
 
 plan tests => $TEST_COUNT;
 

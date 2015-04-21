@@ -7,7 +7,7 @@ use FindBin qw( $Bin );
 use Readonly;
 use Test::More tests => 10;
 
-Readonly my $PERL          => $Config{'perlpath'};
+Readonly my $PERL          => $^X;
 Readonly my $TEST_DATA_DIR => catdir( $Bin, 'data' );
 Readonly my $TABMERGE      => catfile( $Bin, '..', 'bin', 'tabmerge' );
 

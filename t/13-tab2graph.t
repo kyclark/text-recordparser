@@ -9,7 +9,7 @@ use Readonly;
 use Test::More;
 
 Readonly my $TEST_COUNT    => 4;
-Readonly my $PERL          => $Config{'perlpath'};
+Readonly my $PERL          => $^X;
 Readonly my $TEST_DATA_DIR => catdir( $Bin, 'data' );
 Readonly my $TAB2GRAPH     => catfile( $Bin, '..', 'bin', 'tab2graph' );
 
@@ -28,7 +28,7 @@ SKIP: {
     ok( -e $data, 'Data file exists' );
 
     my $out_file = catfile( $Bin, 'foo.png' );
-    my $command  = "$TAB2GRAPH -c -o $out_file $data 2>&1";
+    my $command  = "$PERL $TAB2GRAPH -c -o $out_file $data 2>&1";
     my $out      = `$command`;
     my $basename = basename( $out_file );
     is( $out, qq[Image created "$basename."\n], 'Diagnostic OK' );
