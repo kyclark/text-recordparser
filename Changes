@@ -1,3 +1,8 @@
+1.6.5   April 21 2015
+
+-   Changes to make installation work better, address 
+    https://rt.cpan.org/Public/Bug/Display.html?id=54816
+
 1.6.3   August 9 2012
 
 -   Fixed bug in "Build.PL" regarding "podselect," updated Build.PL reqs
