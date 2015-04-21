@@ -91,7 +91,7 @@ use List::MoreUtils qw( uniq );
 use Readonly;
 use Text::ParseWords qw( parse_line );
 
-our $VERSION = version->new('1.6.3');
+our $VERSION = version->new('1.6.4');
 
 Readonly my $COMMA     => q{,};
 Readonly my $EMPTY_STR => q{};
